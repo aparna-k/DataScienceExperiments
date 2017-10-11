@@ -1,12 +1,13 @@
 import oauth2 as oauth
 import urllib2 as urllib
+import os
 
 # See assignment1.html instructions or README for how to get these credentials
 
-api_key = "Df5yJEaZXyxp6MkkYKhaqE4U0"
-api_secret = "tttvL7silfCieA4H7eZosckJe5e3t0kVxDC71tWf3J2OJrdwPp"
-access_token_key = "95175186-Z4r0PoJwNKykVRNxuYU6xIlYNW4KgOWzg1BcvkhEG"
-access_token_secret = "RtFVyhkupEUxlVR4aGh02kPuH8q0EH2LlW3na8DjK0aOE"
+api_key = os.environ.get('TWITTER_API_KEY')
+api_secret = os.environ.get('TWITTER_API_SECRET')
+access_token_key = os.environ.get('TWITTER_ACCESS_TOKEN_KEY')
+access_token_secret = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
 
 _debug = 0
 
