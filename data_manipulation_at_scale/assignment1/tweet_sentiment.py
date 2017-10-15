@@ -17,7 +17,7 @@ def main():
         # The file is tab-delimited. "\t" means "tab character"
         term, score = line.split("\t")
         scores[term] = int(score)  # Convert the score to an integer.
-    tweets_score = []
+    # tweets_score = []
 
     for line in tweet_file:
         tweet = json.loads(line)
